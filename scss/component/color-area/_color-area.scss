@@ -1,0 +1,40 @@
+[class$=-color-area] {
+  border-radius: $br;
+  box-shadow: $box-shadow;
+  padding: 2ch;
+  gap: 2ch;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr;
+
+  .title { 
+    grid-row: 1;
+    grid-column: 1 / 3;
+    display: flex;
+    align-items: center;
+    
+    h1 { 
+      font-size: 1.25rem;
+      margin-right: 2ch;
+    }
+    h2 { 
+      font-size: 1.125rem; 
+      margin-top: 0;
+    }
+
+    h1,
+    h2 { 
+      flex: 1;
+      text-shadow: 0 1px 0 rgba(255,255,255,0.3), 0 -1px 0 rgba(0,0,0,0.3);
+      font-weight: 700; 
+    }
+  }
+
+  .table-container {
+    width: 100%;
+
+    tbody tr td:first-child .cell {
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.search-form > .input {
+  border-color: rgba(200,200,200,0.4);
+  transition: $anim;
+
+  &:hover {
+    border-color: rgba(200,200,200,0.8);
+  }
+
+  &:focus { border-color: hsl(265, 75%, 75%); }
+}

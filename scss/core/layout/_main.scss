@@ -1,0 +1,9 @@
+.root main.content {
+  grid-row: 2;
+  grid-column: 1;
+  
+  section.container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}

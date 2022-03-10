@@ -1,0 +1,9 @@
+.root {
+  background: #101219;
+  color: rgba(255,255,255,0.8);
+}
+
+::selection {
+  background-color: hsl(265, 100%, 80%);
+  color: black;
+}

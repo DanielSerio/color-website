@@ -1,0 +1,30 @@
+input,
+button,
+textarea,
+select {
+  appearance: none;
+  outline: none;
+  border-radius: $br;
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+}
+
+button {
+  display: flex;
+  border: none;
+  box-shadow: $box-shadow;
+}
+
+button,
+input,
+select { 
+  padding: 0 2ch;
+  line-height: 2rem; 
+}
+
+input,
+textarea {
+  border: 1px solid;
+  background: transparent;
+}

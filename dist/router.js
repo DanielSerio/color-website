@@ -19,7 +19,7 @@ router.get('/:color', (req, res, next) => {
             color: color.hex,
             colorRGB: color.RGB,
             colorHSL: color.HSL,
-            contrastColor: color.hex,
+            contrastColor: color.contrastColor,
             compliment: color.compliment.hex,
             complimentRGB: color.compliment.RGB,
             complimentHSL: color.compliment.HSL,
@@ -34,5 +34,8 @@ router.get('/:color', (req, res, next) => {
     }
 });
 app_1.default.use('/color', router);
+app_1.default.get('/', (_, res) => {
+    return res.render('pages/landing.pug', { title: 'Home' });
+});
 exports.default = app_1.default;
 //# sourceMappingURL=router.js.map

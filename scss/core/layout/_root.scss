@@ -1,0 +1,22 @@
+.root {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: grid;
+  gap: 2ch;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto auto;
+
+  &,
+  & > .header,
+  & > .footer,
+  & > .content,
+  & > .aside { position: relative; }
+
+  & > .header,
+  & > .footer,
+  & > .content,
+  & > .aside { padding: 2ch; }
+}
+

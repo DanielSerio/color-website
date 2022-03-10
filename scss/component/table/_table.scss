@@ -1,0 +1,50 @@
+.root .table-container {
+  position: relative;
+  display: inline-block;
+  margin: 1rem auto;
+  overflow: hidden;
+  background: #101215;
+  color: rgba(250,255,252,0.75);
+  border-radius: $br;
+  box-shadow: $box-shadow;
+
+  table,
+  thead,
+  tbody,
+  tr { width: 100%; }
+
+  table {
+    position: relative;
+    z-index: 2;
+
+    thead .cell { padding: 0 1ch; }
+
+    tbody .cell {
+      padding: 1ch;
+    }
+
+    tbody tr:not(:last-child) {
+      border-bottom: 1px solid #404249;
+    }
+  }
+
+  &:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    height: 2rem;
+    max-height: 2rem;
+    width: 100%;
+    background: rgba(249,252,255,0.1);
+    z-index: 0;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 4px black;
+  }
+
+  table > thead > tr {
+    height: 2rem;
+    max-height: 2rem;
+    color: rgba(255,255,255,0.85);
+  }
+}

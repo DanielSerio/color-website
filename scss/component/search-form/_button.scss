@@ -1,0 +1,27 @@
+.search-form > button {
+  align-items: center;
+  background: hsl(265, 75%, 75%);
+  color: black;
+  margin-left: 2ch;
+  transition: $anim;
+
+  &:disabled {
+    background: hsla(265, 3%, 75%, 0.3);
+    color: black;  
+  }
+
+  .text {
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    transition: width 120ms ease;
+   }
+
+   .icon {
+     max-height: 25px;
+   }
+
+   svg {
+     display: inline-block;
+   }
+}

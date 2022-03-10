@@ -19,7 +19,7 @@ router.get('/:color', (req: Request, res: Response, next: NextFunction) => {
       color: color.hex,
       colorRGB: color.RGB,
       colorHSL: color.HSL,
-      contrastColor: color.hex,
+      contrastColor: color.contrastColor,
       compliment: (color.compliment as Color).hex,
       complimentRGB: (color.compliment as Color).RGB,
       complimentHSL: (color.compliment as Color).HSL,
@@ -34,5 +34,9 @@ router.get('/:color', (req: Request, res: Response, next: NextFunction) => {
 })
 
 app.use('/color', router)
+
+app.get('/', (_, res: Response) => {
+  return res.render('pages/landing.pug', { title: 'Home' })
+})
 
 export default app

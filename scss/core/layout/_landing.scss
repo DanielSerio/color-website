@@ -1,0 +1,11 @@
+.root > .landing-block {
+  grid-column: 1;
+  grid-row: 2 / 5;
+  padding: 2ch;
+  text-align: center;
+
+  p {
+    max-width: 65ch;
+    margin: 1rem auto;
+  }
+}
