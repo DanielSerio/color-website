@@ -1,0 +1,14 @@
+extends ../template.pug
+block CONTENT
+  main.content
+    section.container
+      .main-color-area(style={background: `#${color}`, color: contrastColor }) 
+        h1.name= `#${color}`     
+        include ../includes/rgb-table.pug 
+        include ../includes/hsl-table.pug
+  aside.aside 
+    section.container
+      .compliment-color-area(style={background: `#${compliment}`, color: complimentContrastColor })  
+        h1.name= `#${compliment}`
+        include ../includes/compliment-rgb-table.pug 
+        include ../includes/compliment-hsl-table.pug

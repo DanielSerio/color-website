@@ -1,0 +1,10 @@
+{
+  "watch": [
+    "./scripts/*",
+    "./views/*",
+    "./scss/*",
+    "./src/**/*"
+  ],
+  "ext": "ts,scss,pug",
+  "exec": "sass ./scss/style.scss:./public/css/style.css && concurrently \"tsc\" \"tsc -p ./scripts\" && node dist"
+}
