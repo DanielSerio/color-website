@@ -1,6 +1,6 @@
 # Color code static website
 
-A static website that provider color information for a given hex code.
+A static website that provides color information for a given hex code.
 
 ## Tools:
 
